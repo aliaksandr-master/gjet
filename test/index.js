@@ -56,16 +56,11 @@ exports['get:self'] = function (test) {
 	test.done();
 };
 
-exports['get:undefined'] = function (test) {
+exports['get:defaults'] = function (test) {
 	test.strictEqual(gjet.get(bigObject, ''), undefined);
 	test.strictEqual(gjet.get(bigObject, 123), undefined);
 	test.strictEqual(gjet.get(bigObject, 'null'), undefined);
 	test.strictEqual(gjet.get(bigObject, 'undefined'), undefined);
-
-	test.done();
-};
-
-exports['get:defaults'] = function (test) {
 	test.strictEqual(gjet.get(bigObject, 'null', null), null);
 	test.strictEqual(gjet.get(bigObject, 'undefined', null), null);
 
@@ -78,6 +73,12 @@ exports['get:simple-get'] = function (test) {
 	test.strictEqual(gjet.get(bigObject, 'i:g:a:a'), 123123);
 	test.strictEqual(gjet.get(bigObject, 'i:g:a:c:0'), 123123);
 	test.strictEqual(gjet.get(bigObject, 'i:g:a:c:2:a:1'), 234234);
+
+	test.done();
+};
+
+exports['get:simple-get-defaults'] = function (test) {
+	test.strictEqual(gjet.get(bigObject, 'i:g:a:c:2:b'), undefined);
 
 	test.done();
 };
