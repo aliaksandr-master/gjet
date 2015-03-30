@@ -15,20 +15,17 @@
     ""
   ],
   "author": "aliaksandr-pasynkau",
-  
-    "license": "MIT",
-  
-  
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/aliaksandr-pasynkau/gjet.git"
-    },
-    "bugs": {
-      "url": "https://github.com/aliaksandr-pasynkau/gjet/issues"
-    },
-    "homepage": "https://github.com/aliaksandr-pasynkau/gjet",
-  
-  "dependencies": {},
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aliaksandr-pasynkau/gjet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aliaksandr-pasynkau/gjet/issues"
+  },
+  "homepage": "https://github.com/aliaksandr-pasynkau/gjet",
+  "dependencies": {
+  },
   "devDependencies": {
     "lodash": "^3.0.1",
     "grunt": "^0.4.5",
